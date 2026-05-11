@@ -1,15 +1,27 @@
 class env;
 
-driver bfm=new();
-gen g=new();
+gen g;
+driver bfm;
+monitor mon;
+coverage cov;
+
+function new();
+g=new();
+bfm=new();
+mon=new();
+cov=new();
+endfunction
 
 task run();
 $display("");
-$display("///////////EVNIRONMENT////////////////");
+$display("///////////ENVIRONMENT////////////////");
 $display("");
+fork
 g.run();
 bfm.run();
-
+mon.run();
+cov.run();
+join_any
 
 endtask
 
