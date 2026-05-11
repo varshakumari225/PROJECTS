@@ -10,7 +10,7 @@ interface intf(input logic clk,input logic rst);
 	endclocking
 
 	modport mod(clocking cb,input clk,input rst);
-	
+	/*
 	covergroup c_group@(posedge clk);
 	option.per_instance=1;
 	option.auto_bin_max=64;
@@ -22,5 +22,5 @@ interface intf(input logic clk,input logic rst);
         endgroup
 
 	c_group cg=new();
-
+*/
 endinterface
