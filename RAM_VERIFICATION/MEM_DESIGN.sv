@@ -9,7 +9,7 @@ reg [7:0]memory[255:0];
 
 always @(posedge clk)begin
 
-if(rst)begin
+if(!rst)begin
 rd_data<=8'b0;
 end
 
