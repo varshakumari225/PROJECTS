@@ -7,10 +7,10 @@ int que[$];
 task run();
 $display("///////////////DRIVER STARTED/////////////");
 b_intf=cfg::vintf;
-wait(!b_intf.rst);
+wait(b_intf.rst==1);
 forever
 begin
-cfg::mb.get(tx);
+cfg::gen2drv.get(tx);
 
 if(tx.wr_rd==1)begin
 write_mem();
@@ -40,7 +40,7 @@ b_intf.mod.cb.wr_rd<=1'b0;
 @(b_intf.cb);//apply address
 @(b_intf.cb);//wait for one clock to get data
 
-tx.rd_data=b_intf.cb.rd_data;
+tx.rd_data=b_intf.mod.cb.rd_data;
 $display("address : %0d reading data : %0d ",b_intf.mod.cb.addr,tx.rd_data);
 endtask
 
