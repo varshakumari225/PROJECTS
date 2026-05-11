@@ -4,6 +4,8 @@
 `include "MEM_TX.sv"
 `include "MEM_GEN.sv"
 `include "MEM_DRIVER.sv"
+`include "MONITOR.sv"
+`include "COVERAGE.sv"
 `include "MEM_ENV.sv"
 `include "TEST.sv"
 `include "MEM_TOP.sv"
