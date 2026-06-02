@@ -36,3 +36,7 @@ APB TEST
     Why use it here: It blocks outside components (like a Test or Environment) from bypass-calling driver.drive_read() directly. It forces everyone to use standard UVM sequences to move data, keeping the architecture clean.
 
     
+APB SEQUENCE 
+
+inside the body task 
+  //create 10 random APB read/write transaction and send to driver
