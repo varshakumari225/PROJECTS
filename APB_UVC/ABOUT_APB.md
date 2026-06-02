@@ -40,3 +40,10 @@ APB SEQUENCE
 
 inside the body task 
   //create 10 random APB read/write transaction and send to driver
+
+  TB_TOP 
+
+  //Pass this physical interface to test top (which will further pass it down to env->agent->drv/sqr/mon
+  //Call the test - but passing run_test argument as test class name
+  //Another option is to not pass any test argument and use +UVM_TEST on command line to sepecify which test to run
+   
