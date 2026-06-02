@@ -2,8 +2,8 @@
 
  * APB TEST 
 
-       Build phase - Construct the env class using factory
-       Get the virtual interface handle from Test and then set it config db for the env component
+   Build phase - Construct the env class using factory
+   Get the virtual interface handle from Test and then set it config db for the env component
        Run phase - Create an abp_sequence and start it on the apb_sequencer
 
   * APB_ENV 
