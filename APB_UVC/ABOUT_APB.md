@@ -34,3 +34,5 @@ APB TEST
     2. Why protected? (For Architectural Safety)
     What it means: Restricts access. Only this driver and its future child classes can call these tasks.
     Why use it here: It blocks outside components (like a Test or Environment) from bypass-calling driver.drive_read() directly. It forces everyone to use standard UVM sequences to move data, keeping the architecture clean.
+
+    
