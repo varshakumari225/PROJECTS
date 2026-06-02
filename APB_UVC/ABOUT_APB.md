@@ -9,3 +9,11 @@ APB TEST
 
   //ENV class will have agent as its sub component
    //Build phase - Construct agent and get virtual interface handle from test  and pass it down to agent
+
+   APB AGENT
+
+    //Agent will have the sequencer, driver and monitor components for the APB interface
+    //Build phase of agent - construct sequencer, driver and monitor
+    //get handle to virtual interface from env (parent) config_db
+    //and pass handle down to srq/driver/monitor
+    //Connect - driver and sequencer port to export
