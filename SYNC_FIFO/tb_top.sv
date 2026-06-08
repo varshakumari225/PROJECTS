@@ -50,7 +50,6 @@ module tb_top;
   initial begin
     uvm_config_db #(virtual fifo_inf)::set(null,"*","vif",vif);
     run_test("fifo_test");
-    #10;$finish;
   end
 endmodule
     
