@@ -117,4 +117,4 @@ UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter
  
 # WAVEFORMS 
 
-<img width="1090" height="439" alt="image" src="https://github.com/user-attachments/assets/67cd8872-822a-4442-bff0-ec275c4d20de" />
+![Waveform]<img width="1090" height="439" alt="image" src="https://github.com/user-attachments/assets/67cd8872-822a-4442-bff0-ec275c4d20de" />
