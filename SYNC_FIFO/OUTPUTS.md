@@ -1,5 +1,5 @@
 # OUTPUTS 
-
+```text
 UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
  UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
  UVM_INFO @ 0: reporter [RNTST] Running test fifo_test...
@@ -113,7 +113,7 @@ UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter
  [fifo_sb]    15
  [fifo_wdriver]     8
  [fifo_wmonitor]     8
-
+```
  
 # WAVEFORMS 
 
